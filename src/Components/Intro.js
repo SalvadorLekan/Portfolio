@@ -1,5 +1,7 @@
 import React,{useState,useEffect,useRef} from 'react'
-import { TweenLite,Power3 } from 'gsap'
+import gsap,{ TweenLite,Power3 } from 'gsap'
+
+gsap.registerPlugin(TweenLite,Power3)
 
 const Intro=()=> {
     let naMe = useRef(null)
